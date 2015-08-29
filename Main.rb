@@ -22,9 +22,9 @@ end
 	 
 board_positions_array = ["0", "1", "2", "3", "4", "5", "6", "7","8"]
 
-	 
-	 # board(" Welcome to Tic Tac Toe")
-	 board("board positions", board_positions_array)
+	 empty =Array.new(9," ")
+	  board(" Welcome to Tic Tac Toe", board_positions_array)
+	 board("The current board is:", empty)
 
 def p1choice
         puts " Player 1 do you want x or o"
@@ -44,7 +44,7 @@ def set_players
 
 		puts "Player 1 has chosen #{@p1marker}"
 		
-		puts " Player 1 is #{@p1marker} and Player 2 is #{@p2marker}"
+puts " Player 1 is #{@p1marker} and Player 2 is #{@p2marker}"
 		end
 		
 	set_players		
