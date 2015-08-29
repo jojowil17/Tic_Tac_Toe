@@ -22,9 +22,9 @@ end
 	 
 board_positions_array = ["0", "1", "2", "3", "4", "5", "6", "7","8"]
 
-	 empty =Array.new(9," ")
+	 current_board=Array.new(9," ")
 	  board(" Welcome to Tic Tac Toe", board_positions_array)
-	 board("The current board is:", empty)
+	 board("The current board is:", current_board)
 
 def p1choice
         puts " Player 1 do you want x or o"
@@ -54,4 +54,5 @@ sqrchoice=gets.to_i
 
 puts"Player 1 has chosen #{sqrchoice}"
 	
-	
+current_board[sqrchoice] = "#{@p1marker}"
+board("player 1 (#{@p1marker}) chose space #{sqrchoice}", current_board)
