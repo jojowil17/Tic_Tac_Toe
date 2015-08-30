@@ -1,6 +1,6 @@
 
-def board
-
+def board(message)
+puts message
 puts"""
   | |
   | |
@@ -12,8 +12,8 @@ __|_|__
   | |
 	     """
 end
-board
-
+board("welcome to tic tac toe")
+board("the board status is:")
 
 
 
