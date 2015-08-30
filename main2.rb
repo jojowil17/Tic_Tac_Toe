@@ -37,9 +37,5 @@ puts"player 1 is #{p1marker} and player 2 is #{p2marker}"
 
 puts"Player 1 please choose a square"
 sqrchoice = gets.to_i
-
-puts "Player 1 choosed square #{sqrchoice}"
-
-
-
-
+current_board[sqrchoice] = p1marker
+board("player1 choose square #{sqrchoice} ",current_board)
