@@ -33,7 +33,12 @@ if p1 == "X"
      end
 end
 p2marker = p2choice(p1marker)
-puts"player1 is #{p1marker} and player 2 is #{p2marker}"
+puts"player 1 is #{p1marker} and player 2 is #{p2marker}"
+
+puts"Player 1 please choose a square"
+sqrchoice = gets.to_i
+
+puts "Player 1 choosed square #{sqrchoice}"
 
 
 
