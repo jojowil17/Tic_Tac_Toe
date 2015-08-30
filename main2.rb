@@ -1,19 +1,22 @@
 
-def board(message)
+
+board_array = ["0","1","2","3","4","5","6","7","8"]
+
+def board(message,board_array)
 puts message
 puts"""
   | |
-  | |
+ #{board_array[0]}|#{board_array[1]}|#{board_array[2]}
 __|_|__
   | |
-  | |
+ #{board_array[3]}|#{board_array[4]}|#{board_array[5]}
 __|_|__
-  | |
+ #{board_array[6]}|#{board_array[7]}|#{board_array[8]}
   | |
 	     """
 end
-board("Welcome to tic tac toe")
-board("The board status is:")
+board("Welcome to tic tac toe",board_array)
+#board("The board status is:")
 
 
 def p1choice
