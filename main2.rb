@@ -1,7 +1,7 @@
 
 
 board_array = ["0","1","2","3","4","5","6","7","8"]
-
+current_board = Array.new(9," ")
 def board(message,board_array)
 puts message
 puts"""
@@ -16,7 +16,7 @@ __|_|__
 	     """
 end
 board("Welcome to tic tac toe",board_array)
-#board("The board status is:")
+board("The current board is:", current_board)
 
 
 def p1choice
